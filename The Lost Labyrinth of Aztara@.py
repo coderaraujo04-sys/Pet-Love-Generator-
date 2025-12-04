@@ -25,11 +25,11 @@ print('''
 print("Welcome to the Lost Labyrinth of Aztara you will find your true self here or you will die, depend on you!?")
 print("You wake up at the entrance of the ancient Labyrinth of Aztara.!! Every path have their owen ending !!")
 print("Three glowing corridors stand before you.")
-choose_corridors = input("Choose a corridor: A Blue Light B Red Light C Golden Light\n")
+choose_corridors = input("Choose a corridor: A Blue Light B Red Light C Golden Light\n").upper()
 print(choose_corridors)
 
 #this path for corridors A Blue light path
-if choose_corridors == "A" or choose_corridors == "a":
+if choose_corridors == "A":
     print("You enter the Chamber of Symbols")
     a_puzzle = input("A puzzle appears chose the correct symbol: Moon, Crescent, Sun.\n ")
     if a_puzzle == "Moon" or a_puzzle == "moon":
@@ -43,10 +43,10 @@ if choose_corridors == "A" or choose_corridors == "a":
         print("Crystal Prison → GAME OVER")
 
 #corridors B red light path
-elif choose_corridors == "B" or choose_corridors == "b":
+elif choose_corridors == "B":
     print("A massive Minotaur Behemoth blocks your path.")
-    choose_action = input("Choose your action: B1 Run into a narrow corridor B2 Scare it away with a torch B3 Fight the monster\n")
-    if choose_action == "B2" or choose_action == "b2":
+    choose_action = input("Choose your action: B1 Run into a narrow corridor B2 Scare it away with a torch B3 Fight the monster\n").upper()
+    if choose_action == "B2":
         print( "Enter the Floor Trap Chamber")
         floor_trap = input("brake this riddle: What goes up but never comes down?\n")
         if floor_trap == "Age" or floor_trap == "age" or floor_trap == "Your age":
@@ -57,7 +57,7 @@ elif choose_corridors == "B" or choose_corridors == "b":
         print(" Fight the monster → you die → GAME OVER")
 
 #corridors C golden light path
-elif choose_corridors == "C" or choose_corridors == "c":
+elif choose_corridors == "C":
     print("You meet the Whispering Sage")
     sage_ask = input("I exist before you are born, I exist after you die, yet I am not time.\n")
     if sage_ask == "Silence" or sage_ask == "silence":
